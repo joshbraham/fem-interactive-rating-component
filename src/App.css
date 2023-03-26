@@ -1,38 +1,136 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  --clr-orange: hsl(25, 97%, 53%);
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(217, 12%, 93%);
+  --clr-neutral-300: hsl(217, 12%, 63%);
+  --clr-neutral-500: hsl(216, 12%, 54%);
+  --clr-neutral-700: hsl(213, 19%, 18%);
+  --clr-neutral-800: hsl(0, 0%, 16%);
+  --clr-neutral-900: hsl(216, 12%, 8%);
+
+  --fs-paragraph: 15px;
+}
+
+#root {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+/* Global styles */
+
+body {
+  background-color: var(--clr-neutral-900);
+  font-family: "Overpass", sans-serif;
+}
+
+p {
+  font-size: var(--fs-paragraph);
+  color: var(--clr-neutral-300);
+}
+
+h1 {
+  color: var(--clr-neutral-100);
+}
+
+.card {
+  --content-spacing: 1.5rem;
+  --content-padding: 2rem;
+  width: 425px;
+  border-radius: 25px;
+  background-color: var(--clr-neutral-700);
+  display: grid;
+  grid-auto-flow: row;
+  gap: var(--content-spacing);
+  padding: var(--content-padding);
+}
+
+.card-text {
+  display: grid;
+  grid-template-rows: repeat(2, auto-fit);
+}
+
+/* ThankyouCard styles */
+
+.illustration,
+.rating {
+  justify-self: center;
+}
+
+.rating {
+  --height: 40px;
+  height: var(--height);
+  line-height: var(--height);
+  padding: 0 15px;
+  border-radius: 25px;
+  color: var(--clr-orange);
+  background-color: var(--clr-neutral-800);
+}
+
+.thank-you-text {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* FeedbackForm styles */
+
+.star-icon {
+  width: 40px;
+  aspect-ratio: 1;
+  background-color: var(--clr-neutral-800);
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  padding-left: 2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.rating-wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: var(--content-spacing);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-rating {
+  text-align: center;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  text-decoration: none;
+  color: var(--clr-neutral-300);
+  background-color: var(--clr-neutral-800);
+  line-height: 53px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-rating:hover {
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-neutral-500);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-rating.active {
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-orange);
+}
+
+.btn-submit {
+  --height: 45px;
+  height: var(--height);
+  line-height: calc(var(--height) + 5px);
+  letter-spacing: 0.125em;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--clr-orange);
+  background-color: var(--clr-neutral-100);
+  border-radius: 25px;
+}
+
+.btn-submit:hover {
+  background-color: var(--clr-neutral-200);
+}
+
+.btn-submit:active {
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-orange);
 }
