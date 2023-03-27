@@ -46,6 +46,7 @@ h1 {
   grid-auto-flow: row;
   gap: var(--content-spacing);
   padding: var(--content-padding);
+  position: relative;
 }
 
 .card-text {
@@ -70,7 +71,7 @@ h1 {
   background-color: var(--clr-neutral-800);
 }
 
-.thank-you-text {
+.center-text {
   text-align: center;
 }
 

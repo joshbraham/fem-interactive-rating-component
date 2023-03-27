@@ -1,8 +1,9 @@
+import { motion } from "framer-motion";
 import iconStar from "./assets/icon-star.svg";
 
 export default function FeedbackForm(props) {
   return (
-    <div className="card">
+    <motion.div key="fbf" className="card" {...props.transition}>
       <picture className="star-icon">
         <img src={iconStar} alt="Star Icon" />
       </picture>
@@ -58,6 +59,6 @@ export default function FeedbackForm(props) {
       <a class="btn-submit" href="#" onClick={props.handleSubmit}>
         Submit
       </a>
-    </div>
+    </motion.div>
   );
 }

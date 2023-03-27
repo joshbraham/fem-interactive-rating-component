@@ -1,7 +1,9 @@
+import { AnimatePresence } from "framer-motion";
 import { useRef, useState } from "react";
-import "./App.css";
 import FeedbackForm from "./FeedbackForm";
 import ThankyouCard from "./ThankyouCard";
+
+import "./styles/App.css";
 
 function App() {
   const [rating, setRating] = useState("");
@@ -37,10 +39,26 @@ function App() {
     setSubmitted(true);
   };
 
-  return submitted ? (
-    <ThankyouCard rating={rating} />
-  ) : (
-    <FeedbackForm handleSelect={handleSelect} handleSubmit={handleSubmit} />
+  // Framer motion.div props
+  const transition = {
+    initial: { y: "25%", opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+    exit: { y: "-25%", opacity: 0 },
+    transition: { duration: 0.4, ease: "easeOut" },
+  };
+
+  return (
+    <AnimatePresence>
+      {submitted ? (
+        <ThankyouCard rating={rating} transition={transition} />
+      ) : (
+        <FeedbackForm
+          handleSelect={handleSelect}
+          handleSubmit={handleSubmit}
+          transition={transition}
+        />
+      )}
+    </AnimatePresence>
   );
 }
 
