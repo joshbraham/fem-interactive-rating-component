@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
 
 :root {
-  --clr-orange: hsl(25, 97%, 53%);
   --clr-green: lime;
+  --clr-orange: hsl(25, 97%, 53%);
+  --clr-lightorange: hsl(25, 97%, 60%);
 
   --clr-neutral-100: hsl(0, 0%, 100%);
   --clr-neutral-200: hsl(217, 12%, 93%);
@@ -120,19 +121,19 @@ h1 {
   line-height: calc(var(--height) + 5px);
   letter-spacing: 0.125em;
   text-transform: uppercase;
-  color: var(--clr-orange);
-  background-color: var(--clr-neutral-100);
   border: none;
   border-radius: 25px;
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-orange);
 }
 
 .btn-submit:hover {
-  background-color: var(--clr-neutral-200);
+  background-color: var(--clr-lightorange);
 }
 
 .btn-submit:active {
-  color: var(--clr-neutral-100);
-  background-color: var(--clr-orange);
+  color: var(--clr-orange);
+  background-color: var(--clr-neutral-100);
 }
 
 .btn-submitted {
