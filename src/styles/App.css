@@ -18,8 +18,10 @@
 
 #root {
   display: grid;
-  place-content: center;
+  align-content: center;
+  justify-items: center;
   height: 100vh;
+  grid-template-columns: 1fr;
 }
 
 /* Global styles */
@@ -41,7 +43,8 @@ h1 {
 .card {
   --content-spacing: 1.5rem;
   --content-padding: 2rem;
-  width: 425px;
+  max-width: 425px;
+  aspect-ratio: 1;
   border-radius: 25px;
   background-color: var(--clr-neutral-700);
   display: grid;
