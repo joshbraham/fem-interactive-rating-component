@@ -15,50 +15,29 @@ export default function FeedbackForm(props) {
         </p>
       </div>
       <div className="rating-wrapper">
-        <a
-          class="btn-rating"
-          href="#"
-          data-value="1"
-          onClick={props.handleSelect}
-        >
+        <button class="btn-rating" data-value="1" onClick={props.handleSelect}>
           1
-        </a>
-        <a
-          class="btn-rating"
-          href="#"
-          data-value="2"
-          onClick={props.handleSelect}
-        >
+        </button>
+        <button class="btn-rating" data-value="2" onClick={props.handleSelect}>
           2
-        </a>
-        <a
-          class="btn-rating"
-          href="#"
-          data-value="3"
-          onClick={props.handleSelect}
-        >
+        </button>
+        <button class="btn-rating" data-value="3" onClick={props.handleSelect}>
           3
-        </a>
-        <a
-          class="btn-rating"
-          href="#"
-          data-value="4"
-          onClick={props.handleSelect}
-        >
+        </button>
+        <button class="btn-rating" data-value="4" onClick={props.handleSelect}>
           4
-        </a>
-        <a
-          class="btn-rating"
-          href="#"
-          data-value="5"
-          onClick={props.handleSelect}
-        >
+        </button>
+        <button class="btn-rating" data-value="5" onClick={props.handleSelect}>
           5
-        </a>
+        </button>
       </div>
-      <a class="btn-submit" href="#" onClick={props.handleSubmit}>
+      <button
+        class="btn-submit"
+        onClick={props.handleSubmit}
+        style={props.submitBtnStyle}
+      >
         Submit
-      </a>
+      </button>
     </motion.div>
   );
 }

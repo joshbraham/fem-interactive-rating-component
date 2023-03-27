@@ -2,6 +2,7 @@
 
 :root {
   --clr-orange: hsl(25, 97%, 53%);
+  --clr-green: lime;
 
   --clr-neutral-100: hsl(0, 0%, 100%);
   --clr-neutral-200: hsl(217, 12%, 93%);
@@ -95,10 +96,9 @@ h1 {
 }
 
 .btn-rating {
-  text-align: center;
   aspect-ratio: 1;
+  border: none;
   border-radius: 50%;
-  text-decoration: none;
   color: var(--clr-neutral-300);
   background-color: var(--clr-neutral-800);
   line-height: 53px;
@@ -119,11 +119,10 @@ h1 {
   height: var(--height);
   line-height: calc(var(--height) + 5px);
   letter-spacing: 0.125em;
-  text-decoration: none;
   text-transform: uppercase;
-  text-align: center;
   color: var(--clr-orange);
   background-color: var(--clr-neutral-100);
+  border: none;
   border-radius: 25px;
 }
 
@@ -134,4 +133,9 @@ h1 {
 .btn-submit:active {
   color: var(--clr-neutral-100);
   background-color: var(--clr-orange);
+}
+
+.btn-submitted {
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-green);
 }
