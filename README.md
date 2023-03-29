@@ -2,19 +2,9 @@
 
 This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI).
 
-### **[Hosted with Netlify]() (Click to see in-browser solution)**
+### **[Hosted with Netlify](https://jbhm-interactive-rating-component.netlify.app/) (Click to see in-browser solution)**
 
 ---
-
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
 
 ## Overview
 
@@ -45,8 +35,6 @@ Users should be able to:
 - create-react-app
 - [Framer Motion](https://www.framer.com/motion/) - JS library for animating in React
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
 ---
 
 ### Useful resources
@@ -58,5 +46,4 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@joshbraham](https://www.frontendmentor.io/profile/joshbraham)
